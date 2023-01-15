@@ -27,12 +27,5 @@ namespace Lab03
             this.grade = grade;
             this.branch = branch;
         }
-
-
-
-        public void AddData(DataGridView myData)
-        {
-            myData.Rows.Add(this.myname, this.myid, this.birth, this.age, this.height, this.grade, this.branch);
-        }
     }
 }

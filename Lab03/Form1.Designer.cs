@@ -51,6 +51,9 @@
             this.iHeight = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Branch = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBoxAll = new System.Windows.Forms.TextBox();
+            this.textBoxMin = new System.Windows.Forms.TextBox();
+            this.textBoxMax = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -192,7 +195,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(927, 435);
+            this.dataGridView1.Size = new System.Drawing.Size(927, 356);
             this.dataGridView1.TabIndex = 15;
             // 
             // StName
@@ -251,11 +254,35 @@
             this.Branch.ReadOnly = true;
             this.Branch.Width = 125;
             // 
+            // textBoxAll
+            // 
+            this.textBoxAll.Location = new System.Drawing.Point(1092, 472);
+            this.textBoxAll.Name = "textBoxAll";
+            this.textBoxAll.Size = new System.Drawing.Size(217, 27);
+            this.textBoxAll.TabIndex = 18;
+            // 
+            // textBoxMin
+            // 
+            this.textBoxMin.Location = new System.Drawing.Point(1092, 439);
+            this.textBoxMin.Name = "textBoxMin";
+            this.textBoxMin.Size = new System.Drawing.Size(217, 27);
+            this.textBoxMin.TabIndex = 17;
+            // 
+            // textBoxMax
+            // 
+            this.textBoxMax.Location = new System.Drawing.Point(1092, 406);
+            this.textBoxMax.Name = "textBoxMax";
+            this.textBoxMax.Size = new System.Drawing.Size(217, 27);
+            this.textBoxMax.TabIndex = 16;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1333, 517);
+            this.Controls.Add(this.textBoxAll);
+            this.Controls.Add(this.textBoxMin);
+            this.Controls.Add(this.textBoxMax);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBoxAge);
             this.Controls.Add(this.lable7);
@@ -305,5 +332,8 @@
         private DataGridViewTextBoxColumn iHeight;
         private DataGridViewTextBoxColumn Grade;
         private DataGridViewTextBoxColumn Branch;
+        private TextBox textBoxAll;
+        private TextBox textBoxMin;
+        private TextBox textBoxMax;
     }
 }
